@@ -1,0 +1,27 @@
+.section {
+  height: 100vh;
+  background-color: black;
+}
+.blackhole-div {
+  width: 300px;
+  transform: translate(200%, 170%);
+}
+.blackhole {
+  width: 300px;
+}
+.planet-pic {
+  transform: translate(700px, 200px);
+  width: 150px;
+}
+.planet-div {
+  width: 100px;
+  animation: planet-animation 20s infinite linear;
+}
+@keyframes planet-animation {
+  0% {
+    transform: rotate(0) translate(250px) rotate(0);
+  }
+  100% {
+    transform: rotate(360deg) translate(250px) rotate(-360deg);
+  }
+}
